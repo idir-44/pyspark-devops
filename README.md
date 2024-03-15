@@ -60,10 +60,3 @@ scp -i pythonapp.pem Dockerfile main.py compose.yaml .dockerignore ec2-user@34.2
 ```bash
 sudo docker-compose up -d --build
 ```
-
-3. **Vérification des images Docker et exécution:**
-
-```bash
-sudo docker images
-sudo docker run -d -p 8080:8080 ec2-dockerapp
-```
